@@ -4,11 +4,12 @@
  
 <article id="main">
 
-<h1>A Feast For Crows</h1>
+<h1>Seven Kingdoms</h1>
+<h2> A Feast For Crows</h2>
 
-<p>Dinner is coming and it is time to dine like a King. A Feast For Crows is the finest eatery in Westeros.
+<p>Dinner is coming and it is time to dine like a King. Seven Kingdoms is the finest eatery in Westeros.
 Featuring Farkas Tulain, head chef to the late King Joffery ( May His Grace rest in peace), our restuarant has
-an extensive menu.  With food approved by the Gods, Old and New, A Feast For Crows is the obvious choice for 
+an extensive menu.  With food approved by the Gods, Old and New, Seven Kingdoms is the obvious choice for 
 anyone looking to dine in King's Landing. Whether you have traveled near or far, all kinds are welcome in our
 establishment.</p>
 
