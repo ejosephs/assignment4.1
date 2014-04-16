@@ -1,0 +1,217 @@
+body {
+  margin:36px auto;
+  width:90%;
+  background-color: #000000;
+}
+#page {
+  margin:0 auto 53px;
+  width:93.75%;
+}
+#main {
+  float:left;
+  width:62.8888889%;
+}
+#other {
+  float:right;
+  width:36.7777778%;
+}
+
+@font-face{font-family: MyFirstFont;
+    src: url(game_of_thrones/GameOfThrones.ttf);}
+
+header{background-color: #474C42;}
+header h1 {padding:0.8em 5.33333333%;
+    font-family: MyFirstFont;
+    color: #F0D1AF;
+    text-shadow: 1px 1px #000000;}
+/*--------------------------- nav ----------------------*/
+nav{background-image: url(images/Ice.gif);
+    background-repeat: no-repeat;
+    background-position: left;}
+nav ol {
+  padding-left:5.33333333%;
+}
+nav a{color: #54645C;
+    text-shadow: 1px 1px #000000;}
+nav a:link{
+    text-decoration: initial;}
+nav a:hover{color: #AA946A;
+    text-decoration: initial;
+    text-shadow: 1px 1px #000000;}
+nav ol li {
+  display:inline;
+  text-align: center;
+  list-style-type:none;
+  padding-right:3em;
+  background: transparent;
+  
+}
+
+ 
+ article h1, article p {
+  padding:0.2em 8.48056537%;
+  color: #F0D1AF;
+}
+aside {
+  margin:0 auto;
+  width:69.7885196%;
+  color: #F0D1AF;
+}
+/*--------------------------- table ------------------------*/
+
+table { 
+  width: 100%; 
+  border-collapse: collapse;
+  color: #292C26;
+}
+/* Zebra striping */
+tr{ 
+  background: #D9C196; 
+}
+th { 
+  background: #412926; 
+  color: #D9C196; 
+  font-weight: bold; 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left;}
+
+
+
+/*CSS for smaller screens*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Hours of Operation"; }
+	td:nth-of-type(2):before { content: " "; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+}
+
+/*--------------------------- form -------------------------*/
+#main{
+    margin: auto;
+    text-align: left;
+    width: 600px;
+}
+
+fieldset{
+    clear: both;
+    border: 1px solid #00498e;
+    
+}
+fieldset.buttons{
+    border: none;
+}
+fieldset.contact{
+    float: left;
+}
+
+fieldset.contact label{
+    display: block;
+    text-align: right
+}
+
+fieldset.contact input{
+    width: 15em;    
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: auto;
+}
+
+fieldset.wrapper legend {
+    color: #00498e;
+    font-weight: bold; 
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+fieldset.wrapper > legend {
+    /* i only want the first legend ie if it follows the class wrapper */
+    font-size: 2em; 
+}
+
+
+/* minor data validation, we would still need to use php to be certain */
+
+fieldset.contact input:valid{
+    border: medium solid green;
+}
+
+fieldset.contact input:invalid{
+    border: medium solid red;
+}
+fieldset.contact input.mistake:valid{
+    border: medium solid red;
+}
+
+/***********************************************************************/
+
+label {
+    color: #005cb3;
+    font-weight: bold;
+    font-size: .9em; 
+    display: block;
+}
+
+.required {
+    font-weight:bolder;
+    font-style:italic;
+}
+
+label.required:before {
+    content: "* ";
+}
+
+span.required:after {
+    color: #000;
+    content: " Required *";
+}
+
+.mistake {
+    color: #fff;
+    background-color:#800;
+    border: thin solid #000;
+}
+
+#errors ol li{
+    color: #ff5555;
+}
