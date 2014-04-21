@@ -1,7 +1,7 @@
 body {
   margin:36px auto;
   width:90%;
-  background-color: #000000;
+  background-color: #141e1d;
 }
 #page {
   margin:0 auto 53px;
@@ -19,62 +19,151 @@ body {
 @font-face{font-family: MyFirstFont;
     src: url(game_of_thrones/GameOfThrones.ttf);}
 
-header{background-color: #474C42;}
-header h1 {padding:0.8em 5.33333333%;
+header{
+    background-image: url("images/Print.png");
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+header h1 {
+    padding:0.8em 5.33333333%;
     font-family: MyFirstFont;
-    color: #F0D1AF;
-    text-shadow: 1px 1px #000000;}
+    color: #7D3419;
+    font-size: 34pt;
+    padding-top: 60px;
+    text-shadow: 1px 1px 2px #B03925;}
+
+h1{text-align: center;
+    color: #f4dcb2}
+/*-------------------------- menu style ----------------*/
+
+li{
+   list-style:none;    
+   overflow:hidden;
+   padding:5px 0;
+   position:relative;
+}
+li label{
+   float:left;
+   background:#141e1d;
+   padding-right:10px;
+   color: #f4dcb2;
+   font-size: 12pt;
+}
+li span{
+   float:right;
+   background:#141e1d;
+   padding-left:10px;
+   color: #f4dcb2;
+   font-size: 12pt;
+}
+.dotted-bg{
+   border-top:dotted 2px #ccc;
+   position:absolute;   
+   top:15px;
+   width:100%;
+   z-index:-1;
+}
+
+
+footer{color: #f4dcb2;
+    }
 /*--------------------------- nav ----------------------*/
 nav{background-image: url(images/Ice.gif);
     background-repeat: no-repeat;
-    background-position: left;}
+    background-position: left;
+    height: 110px;}
+
 nav ol {
-  padding-left:5.33333333%;
+  padding-left: 15em;
+  padding-top: 42px;
 }
-nav a{color: #54645C;
-    text-shadow: 1px 1px #000000;}
+nav a{color: #f4dcb2;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    }
 nav a:link{
-    text-decoration: initial;}
-nav a:hover{color: #AA946A;
     text-decoration: initial;
-    text-shadow: 1px 1px #000000;}
+}
+nav a:hover{color: #8c5135;
+    text-decoration: initial;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-weight: bold; font-style: italic;}
 nav ol li {
   display:inline;
   text-align: center;
   list-style-type:none;
   padding-right:3em;
   background: transparent;
-  
+  padding: .5em;
+  font-size: 15pt;
+  color: #f4dcb2;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
- 
+
  article h1, article p {
   padding:0.2em 8.48056537%;
   color: #F0D1AF;
+  word-wrap: break-word;
 }
-aside {
+article p {font-size:10pt;}
+
+h2{padding:0.2em 8.48056537%;
+  color: #F0D1AF;
+  font-size: 12pt}
+
+aside h1, aside p {
   margin:0 auto;
   width:69.7885196%;
   color: #F0D1AF;
+  padding-left: 4em;
+  word-wrap: break-word;
 }
+
+aside image{float: bottom}
+article image{float: bottom;
+    object-position: center}
 /*--------------------------- table ------------------------*/
 
 table { 
   width: 100%; 
   border-collapse: collapse;
   color: #292C26;
+  background-image: url('images/Paper.png');
+  background-size: cover;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 /* Zebra striping */
 tr{ 
-  background: #D9C196; 
+  background: transparent;
+  color: #111111;
+  text-indent: 1em;
+  font-weight: bold;
+  text-align: center;
 }
 th { 
   background: #412926; 
   color: #D9C196; 
   font-weight: bold; 
   padding: 6px; 
-  border: 1px solid #ccc; 
-  text-align: left;}
+  border: 1px solid #CBCBCB; 
+  text-align: center;}
 
 
 
@@ -133,14 +222,15 @@ only screen and (max-width: 760px),
 
 fieldset{
     clear: both;
-    border: 1px solid #00498e;
-    
+    border: 1px solid #8c5135;
+    color:#8c5135;
 }
 fieldset.buttons{
     border: none;
 }
 fieldset.contact{
     float: left;
+    background: transparent;
 }
 
 fieldset.contact label{
@@ -155,13 +245,23 @@ fieldset.contact input{
 fieldset.wrapper {
     border: 0;
     margin: auto;
+    background-image: url('images/Paper.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+fieldset.wrapper p{color: #000;
+    font-weight: bold;
+    font-size: 12pt;}
+
 fieldset.wrapper legend {
-    color: #00498e;
+    color: #7D3419;
     font-weight: bold; 
     font-size: 1.2em;
     margin-top: 10px;
+    padding-top: 90px;
+    padding-left: 50px;
+    text-shadow: 1px 1px 2px #B03925;
 }
 
 fieldset.wrapper > legend {
@@ -169,6 +269,15 @@ fieldset.wrapper > legend {
     font-size: 2em; 
 }
 
+fieldset.contact legend{
+    padding-top: 0px;
+    backgroud: transparent;
+}
+
+fieldset.intro legend{
+    padding-top: 0px;
+    background: transparent;
+}
 
 /* minor data validation, we would still need to use php to be certain */
 
@@ -186,7 +295,7 @@ fieldset.contact input.mistake:valid{
 /***********************************************************************/
 
 label {
-    color: #005cb3;
+    color: #8c5135;
     font-weight: bold;
     font-size: .9em; 
     display: block;
@@ -199,10 +308,11 @@ label {
 
 label.required:before {
     content: "* ";
+    color: #000;
 }
 
 span.required:after {
-    color: #000;
+    color: #FF0000;
     content: " Required *";
 }
 
