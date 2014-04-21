@@ -1,3 +1,3 @@
 <footer>
-	<p>Erica Josephson</p>
+	<p>Created by Erica Josephson & Alex Skramstad. </p>
 </footer>
