@@ -15,14 +15,19 @@ if(isset($_GET["debug"])){ // ONLY do this in a classroom environment
     $debug = true;  
 }
 
-if ($debug) print "<p>DEBUG MODE IS ON</p>";
+if ($debug) {print "<p>DEBUG MODE IS ON</p>";}
+
+
+
+$email = " ";
+
 
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1b. 
 // 
 // define security variable to be used in SECTION 2a. 
-$yourURL =  $domain . $phpSelf;
+$yourURL =  "http://www.uvm.edu/~ejosephs/cs008/assignment3.1/form.php";
 
 
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
@@ -31,7 +36,6 @@ $yourURL =  $domain . $phpSelf;
 // 
 // Initialize variables one for each form element
 // in the order they appear on the form
-$email="rerickso@uvm.edu";
 
 
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
@@ -117,7 +121,7 @@ if (isset($_POST["btnSubmit"])){
     //  Process for when the form passes validiation (the errorMsg array is empty)
     // 
     if(!$errorMsg){	
-        if ($debug) print "<p>Form is valid</p>";
+        if ($debug) {print "<p>Form is valid</p>";}
 
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         //
@@ -153,7 +157,7 @@ if (isset($_POST["btnSubmit"])){
 
         $filename = $myFileName . $fileExt;
 
-        if ($debug) print "\n\n<p>filename is " . $filename;
+        if ($debug) {print "\n\n<p>filename is " . $filename;}
 
         // now we just open the file for append
         $file = fopen($filename, 'a');    
@@ -264,8 +268,8 @@ if($errorMsg){
       id="frmRegister">
 			
 <fieldset class="wrapper">
-  <legend>Register Today</legend>
-  <p>Please fill out the following registration form. <span class='required'></span>.</p>
+  <legend>Make A Reservation:</legend>
+  <p>Please fill out the following registration form. <span class='required'></span></p>
 
     <fieldset class="intro">
         <legend>Please complete the following form</legend>
@@ -276,7 +280,7 @@ if($errorMsg){
                 <input type="text" id="txtEmail" name="txtEmail" 
                        value="<?php print $email; ?>"
                        tabindex="120" maxlength="45" placeholder="enter a valid email address"
-                       <?php if($emailERROR) print 'class="mistake"'; ?>
+                       <?php if($emailERROR){print 'class="mistake"';} ?>
                        onfocus="this.select()" >
                 </label>
         </fieldset>					
@@ -287,7 +291,8 @@ if($errorMsg){
     </fieldset>
 </fieldset>
 </form>
-  
+</article>
+
 <?php 
 } // end body submit
 if ($debug) {print "<p>END OF PROCESSING</p>";}
