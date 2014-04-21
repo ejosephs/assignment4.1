@@ -3,11 +3,9 @@ include ("top.php");
 ?>
 
 <article id="main">
-	<h1>Hours of Operation:</h1>
-<table>
-<?php
-$file=fopen("Rates.csv","r");
-?>
+	<h1>Hours:</h1>
+</article>
+<table align ="center">
 	<thead>
 	<tr>
 		<th>Hours of Operations</th>
@@ -28,15 +26,7 @@ $file=fopen("Rates.csv","r");
 		<td>Sundays</td>
 		<td>10am - 6pm</td>
         </tr>
-</table>
-                
-</article>
-
-<aside id="other">
-<h2>Aside</h2>
-
-<p>Aside Paragraph</p>
-</aside>
+</table>            
 
 <?php include ("footer.php"); ?>
 </html>
