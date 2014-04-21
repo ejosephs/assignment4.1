@@ -1,4 +1,4 @@
 <header>
-	<h1>Game of Thrones</h1>
+	<h1>Seven Kingdoms</h1>
         
 </header>
