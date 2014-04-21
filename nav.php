@@ -6,7 +6,7 @@
         } else {
             print '<li><a href="home.php">Home</a></li>';
         }
-               if ($path_parts['filename'] == "menu") {
+        if ($path_parts['filename'] == "menu") {
             print '<li class="activePage">Menu</li>';
         } else {
             print '<li><a href="menu.php">Menu</a></li>';
@@ -17,9 +17,9 @@
             print '<li><a href="table.php">Hours</a></li>';
         }
         if ($path_parts['filename'] == "form") {
-            print '<li class="activePage">Reservations & Events</li>';
+            print '<li class="activePage">Reservations</li>';
         } else {
-            print '<li><a href="form.php">Reservations & Events</a></li>';
+            print '<li><a href="form.php">Reservations</a></li>';
         }
         if ($path_parts['filename'] == "locations") {
             print '<li class="activePage">Locations</li>';
